@@ -1,0 +1,67 @@
+@import './variables.less';
+
+.about {
+    box-shadow: @boxShadow;
+    padding: 30px;
+    margin: 40px 20px;
+    border-radius: 10px;
+    background-color: white;
+    font-family: @Source;
+
+    p {
+        font-size: 17px;
+    }
+
+    .about-intro {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+
+        p {
+            text-align: left;
+        }
+
+        .infoEmojis {
+            border-right: 1px solid gray;
+        }
+
+        .infoP {
+
+            padding-left: 20px;
+        }
+
+
+        @media (max-width: @tablet) {
+            display: flex;
+            flex-direction: column;
+
+            .infoEmojis {
+                border: none;
+                padding-bottom: 10px;
+                border-bottom: 1px solid gray;
+            }
+
+            .infoP {
+                padding-left: 0;
+                padding-top: 10px;
+            }
+
+        }
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    @media (max-width: @tablet) {
+        .contact {
+            display: block;
+
+            a {
+                margin: 10px;
+            }
+        }
+    }
+}

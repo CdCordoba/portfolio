@@ -1,0 +1,32 @@
+//Fonts
+
+@bebasNeue: 'Bebas Neue', cursive;
+@joan: 'Joan', serif;
+@work: 'Work Sans', sans-serif;
+@buttonFont: 'Quattrocento', serif;
+@Roboto: 'Roboto Flex', sans-serif;
+@Source: 'Source Sans Pro', sans-serif;
+//box-shadow
+
+@boxShadow: 5px 5px 40px -2px black;
+
+//colors 
+
+@searchColor: #d85353;
+
+//screens
+
+@desktop: 1200px;
+
+@tablet: 800px;
+
+@mobile: 500px;
+
+.transitions(@s: 1, @n, @cursor: pointer) {
+    transition: transform @s;
+
+    &:hover {
+        transform: scale(@n);
+        cursor: @cursor;
+    }
+}

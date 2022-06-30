@@ -1,0 +1,90 @@
+@import './variables.less';
+
+.title {
+    font-size: 50px;
+    font-family: @Source;
+    font-weight: 600;
+}
+
+.proyects {
+    margin-top: 5rem;
+
+}
+
+.proyects__container {
+    margin: 40px 80px;
+    padding: 10px;
+
+
+    img {
+        height: 16rem;
+    }
+
+}
+
+.card-body {
+    box-shadow: @boxShadow;
+}
+
+.col {
+    .transitions(0.5s, 1.05, auto);
+
+    &:hover {
+        position: static;
+    }
+
+}
+
+.card-title {
+    margin-bottom: 20px;
+}
+
+.col:hover .card-text {
+    @media (max-width: @mobile) {
+        margin-top: -320px;
+
+    }
+
+    transition: 1s;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    margin-top: -280px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+    font-family: @Roboto;
+
+    button {
+        background-color: @searchColor;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid gray;
+        font-weight: 600;
+
+        &:hover {
+            background-color: white;
+            color: rgb(133, 23, 23);
+        }
+    }
+}
+
+.card:hover {
+
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+.card:hover .card-img-top {
+    filter: brightness(20%)
+}
+
+.card-text {
+    visibility: hidden;
+    display: none;
+}
