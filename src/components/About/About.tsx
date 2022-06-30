@@ -1,6 +1,9 @@
 import React from "react";
 import "./styles.css";
+const AOS = require("aos");
+
 export default function About() {
+  AOS.init();
   return (
     <div>
       <h2 className="title">About Me</h2>
@@ -11,17 +14,56 @@ export default function About() {
         data-aos-offset="100"
       >
         <div className="about-intro">
-          <p className="infoEmojis">
-            - 🌏 &nbsp; I'm from Buenos Aires, Argentina. <br />- 🤔 &nbsp;
-            Exploring new technologies and developing web applications.
-            <br /> - 🎓 &nbsp; First year complete at Computer Science and Henry
-            bootcamp complete.
-            <br /> - 💼 &nbsp; Teaching Assistant at Henry Bootcamp.
-            <br /> - 🌱 &nbsp; Learning more about Front-end technologies,
-            design and UI/UX.
-            <br />
-          </p>
-          <p className="infoP">
+          <div
+            className="emojis"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-offset="100"
+          >
+            <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+              <div className="emoji__container emoji1">
+                <p className="emoji">🌏</p>
+                <p className="infoEmojis">I'm from Buenos Aires, Argentina</p>
+              </div>
+              <div className="emoji__container emoji2">
+                <p className="emoji">🤓</p>
+                <p className="infoEmojis">
+                  Exploring new technologies and developing web applications.
+                </p>
+              </div>
+              <div className="emoji__container emoji4">
+                <p className="emoji">💼</p>
+                <p className="infoEmojis">
+                  Teaching Assistant at Henry Bootcamp.
+                </p>
+              </div>
+            </div>
+            <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+              <div className="emoji__container emoji5">
+                <p className="emoji">🌱</p>
+                <p className="infoEmojis">
+                  Learning more about Front-end technologies, design and UI/UX.
+                </p>
+              </div>
+              <div>
+                <div className="emoji__container emoji3">
+                  <p className="emoji">🎓</p>
+                  <p className="infoEmojis">
+                    First year complete at Computer Science and Henry bootcamp
+                    complete.
+                  </p>
+                </div>
+              </div>
+
+              <br />
+            </div>
+          </div>
+          <p
+            className="infoP"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-offset="100"
+          >
             But... why me? 🤔 I have no doubt that in the great community of
             programmers there are many talents, what I offer is professionalism
             and passion both for creating large-scale projects and for the group
@@ -30,7 +72,12 @@ export default function About() {
             exploiting one's own.
           </p>
         </div>
-        <div style={{ paddingTop: "10px" }}>
+        <div
+          style={{ paddingTop: "10px" }}
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+          data-aos-offset="100"
+        >
           <h4
             className="title"
             style={{ textAlign: "left", fontSize: "30px", margin: "20px 5px" }}

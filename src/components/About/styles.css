@@ -14,11 +14,23 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
+.about .about-intro .emojis {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  border-right: 1px solid gray;
+}
+.about .about-intro .emojis .emoji__container {
+  padding: 1rem 1.2rem;
+}
+.about .about-intro .emojis .emoji {
+  font-size: 40px;
+  text-align: center;
+}
+.about .about-intro .emojis .infoEmojis {
+  text-align: center;
+}
 .about .about-intro p {
   text-align: left;
-}
-.about .about-intro .infoEmojis {
-  border-right: 1px solid gray;
 }
 .about .about-intro .infoP {
   padding-left: 20px;
@@ -28,7 +40,7 @@
     display: flex;
     flex-direction: column;
   }
-  .about .about-intro .infoEmojis {
+  .about .about-intro .emojis {
     border: none;
     padding-bottom: 10px;
     border-bottom: 1px solid gray;
