@@ -37,11 +37,10 @@ export default function Experience() {
                 <div className="card-text">
                   <p>
                     E-commerce of books in which as a guest you can add products
-                    to the cart and visit the entire page; As a user, you can
-                    register an email, or log in with Google to buy, add books
-                    to favorites and pay with PayPal and cryptocurrencies. It
-                    also has an admin view where you can control users, sales,
-                    stock, etc.
+                    to the cart and as a user you can register an email, or log
+                    in with Google to buy and add books to favorites. It also
+                    has an admin view where you can control users, sales, stock,
+                    etc.
                   </p>
                   <a
                     href="https://bookstore-lyart-six.vercel.app"
