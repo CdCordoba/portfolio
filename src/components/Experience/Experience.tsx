@@ -21,7 +21,7 @@ export default function Experience() {
   AOS.init();
   return (
     <div className="proyects">
-      <h2 className="title">Proyects</h2>
+      <h2 className="title">Projects</h2>
       <div
         className="proyects__container"
         data-aos="zoom-out"
