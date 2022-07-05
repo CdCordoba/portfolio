@@ -9,15 +9,15 @@ export default function About() {
       <h2 className="title">About Me</h2>
       <div
         className="about"
-        data-aos="flip-up"
+        data-aos="zoom-in-up"
         data-aos-duration="1700"
         data-aos-offset="100"
       >
-        <div className="about-intro">
+        <div className="about-intro" style={{ paddingTop: "3rem" }}>
           <div
             className="emojis"
             data-aos="fade-right"
-            data-aos-duration="2000"
+            data-aos-duration="3000"
             data-aos-offset="100"
           >
             <div style={{ display: "flex", justifyContent: "space-evenly" }}>
